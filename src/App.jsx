@@ -1,5 +1,5 @@
 import { Header } from "./header";
-// import { CharacterRatings } from "./character-ratings";
+import { CharacterRatings } from "./character-ratings";
 import { CharacterCards } from "./characater-cards";
 import "./reset.css";
 import "./style.css";
@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="component-container">
         <Header />
-        {/* <CharacterRatings /> */}
+        <CharacterRatings />
         <CharacterCards />
       </div>
     </>

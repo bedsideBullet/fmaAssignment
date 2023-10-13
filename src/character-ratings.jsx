@@ -1,3 +1,5 @@
+import { data } from "./data/fma-data";
+
 export const CharacterRatings = () => {
   return (
     <>
@@ -9,11 +11,13 @@ export const CharacterRatings = () => {
             <th>Skillset</th>
             <th>Votes</th>
           </tr>
-          <tr className="dark">
-            <td>{name}</td>
-            <td>{skillset}</td>
-            <td>{votes}</td>
-          </tr>
+          {data.map((char) => (
+            <tr className="dark" key="char.name">
+              <td>{char.name}</td>
+              <td>{char.skillset}</td>
+              <td>{char.votes}</td>
+            </tr>
+          ))}
         </table>
       </section>
     </>

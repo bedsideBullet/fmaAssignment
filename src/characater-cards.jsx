@@ -1,4 +1,4 @@
-import { data } from "/fma-data.ts?url";
+import { data } from "./data/fma-data";
 
 export const CharacterCards = () => {
   return (

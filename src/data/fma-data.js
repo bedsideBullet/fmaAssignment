@@ -1,13 +1,4 @@
-type Character = {
-  name: string;
-  skillset: string[];
-  votes: number;
-  imageUrl: string;
-  background: string;
-  nickName: null | string;
-};
-
-const data: Character[] = [
+export const data = [
   {
     name: "Alex Louis Armstrong",
     nickName: "Major Armstrong",
@@ -43,7 +34,8 @@ const data: Character[] = [
     nickName: "Greed",
     votes: 45,
     skillset: ["Skin Hardening", "Homunculii"],
-    imageUrl: "https://static.wikia.nocookie.net/villains/images/f/fd/20111222135943%21Greed.png/revision/latest?cb=20140901212536",
+    imageUrl:
+      "https://static.wikia.nocookie.net/villains/images/f/fd/20111222135943%21Greed.png/revision/latest?cb=20140901212536",
     background:
       "Greed is one of the seven deadly sins Homunculii. He's the most 'on our side' of all of them.",
   },
@@ -97,5 +89,3 @@ const data: Character[] = [
       "https://static.wikia.nocookie.net/thejusticeworld/images/8/85/800-by-600-366874-20090424144049.jpg/revision/latest?cb=20120415225041",
   },
 ];
-
-
