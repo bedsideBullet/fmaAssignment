@@ -6,14 +6,15 @@ import "./style.css";
 import "./character-cards.css";
 import "./character-ratings.css";
 import "./header.css";
+import { data } from "./data/fma-data";
 
 function App() {
   return (
     <>
       <div className="component-container">
         <Header />
-        <CharacterRatings />
-        <CharacterCards />
+        <CharacterRatings characters={data} />
+        <CharacterCards characters={data} />
       </div>
     </>
   );

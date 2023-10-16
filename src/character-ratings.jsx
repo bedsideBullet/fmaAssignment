@@ -1,6 +1,5 @@
-import { data } from "./data/fma-data";
-
-export const CharacterRatings = () => {
+export const CharacterRatings = ({ characters }) => {
+  characters.sort((a, b) => a.votes - b.votes);
   return (
     <>
       <section className="character-ratings">
@@ -11,8 +10,8 @@ export const CharacterRatings = () => {
             <th>Skillset</th>
             <th>Votes</th>
           </tr>
-          {data.map((char) => (
-            <tr className="dark" key="char.name">
+          {characters.slice(4).map((char) => (
+            <tr className="dark light" key={char.name}>
               <td>{char.name}</td>
               <td>{char.skillset}</td>
               <td>{char.votes}</td>

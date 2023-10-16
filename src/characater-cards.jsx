@@ -1,9 +1,7 @@
-import { data } from "./data/fma-data";
-
-export const CharacterCards = () => {
+export const CharacterCards = ({ characters }) => {
   return (
     <section id="character-cards">
-      {data.map((char) => (
+      {characters.map((char) => (
         <div className="card" key={char.name}>
           <div className="card-titles">
             <h3>{char.name}</h3>
