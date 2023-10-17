@@ -1,1 +1,6 @@
 https://github.com/bedsideBullet/fmaAssignment
+
+Hey Jon! I followed your video on this assignment and I had two issues I couldn't quite figure out. I didn't see a class with you scheduled but I'm usually at work when you have class anyway so I was hoping you could point me in the right direction here. First I limited the character ratings to 5 which worked, but when I try to sort it I get the bottom of the list or the top but in descending order. the other issue is when I try to make the class row its own component I can't seem to get anything to render at all. I included my component for the ClassRow in the project, but it's not in the rest of the code. I have tried doing it so many ways but I can't seem to make it work. Thanks 
+
+
+side note I have been playing with Typescript and will use it for the next assignment     
